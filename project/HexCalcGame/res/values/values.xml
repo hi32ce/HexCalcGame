@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item name="difficulty_easy" format="integer" type="id">0</item>
+<item name="difficulty_normal" format="integer" type="id">1</item>
+<item name="difficulty_hard" format="integer" type="id">2</item>
+</resources>

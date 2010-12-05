@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="difficulty_name_list">
+    <item>@string/pre_difficulty_easy</item>
+    <item>@string/pre_difficulty_normal</item>
+    <item>@string/pre_difficulty_hard</item>
+</string-array>
+
+<string-array name="difficulty_value_list">
+<!--<item>@id/difficulty_easy</item>
+	<item>@id/difficulty_normal</item>
+	<item>@id/difficulty_hard</item>-->
+	<item>0</item>
+	<item>1</item>
+	<item>2</item>
+</string-array>
+</resources>
