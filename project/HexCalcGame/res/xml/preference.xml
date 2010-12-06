@@ -4,11 +4,11 @@
     <PreferenceCategory android:title="pre_difficulty">
         <ListPreference 
         android:key="pre_difficulty"
-        android:defaultValue="Easy"
-        android:title="pre_difficulty"
-        android:summary="this is LIST"
+        android:defaultValue="@id/difficulty_easy"
+        android:title="@string/pre_difficulty"
+        android:summary="@string/pre_difficulty_summary"
         android:entries="@array/difficulty_name_list"
         android:entryValues="@array/difficulty_value_list"
-        android:dialogTitle="pre_difficulty" />
+        android:dialogTitle="@string/pre_difficulty" />
     </PreferenceCategory>
 </PreferenceScreen>
