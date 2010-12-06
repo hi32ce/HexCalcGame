@@ -33,6 +33,7 @@ public final class R {
         public static final int pre_difficulty_easy=0x7f050007;
         public static final int pre_difficulty_hard=0x7f050009;
         public static final int pre_difficulty_normal=0x7f050008;
+        public static final int pre_difficulty_summary=0x7f05000a;
         public static final int start_button=0x7f050003;
     }
     public static final class xml {
