@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory>
-        <ListPreference 
+    <ListPreference 
         android:key="pre_difficulty"
         android:defaultValue="@id/difficulty_easy"
         android:title="@string/pre_difficulty"
@@ -10,5 +9,10 @@
         android:entries="@array/difficulty_name_list"
         android:entryValues="@array/difficulty_value_list"
         android:dialogTitle="@string/pre_difficulty" />
-    </PreferenceCategory>
+    <PreferenceScreen
+			android:title="@string/pre_about_title">
+            <intent android:action="android.intent.action.VIEW"
+               android:targetPackage="com.ktomoya.app.hexcalcgame"
+               android:targetClass="com.ktomoya.app.hexcalcgame.AboutActivity" />
+	</PreferenceScreen>
 </PreferenceScreen>
