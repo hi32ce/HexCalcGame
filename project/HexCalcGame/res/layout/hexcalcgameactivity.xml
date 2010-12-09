@@ -4,10 +4,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Hello World, HexCalcGameActivity"
-    />
+	<Button android:text="@+id/Button01" 
+	android:id="@+id/Button01" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"/>
 </LinearLayout>
 
