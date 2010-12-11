@@ -3,8 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent" 
     android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/TestTextView"
+        android:text="TestTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/numButtonView"/>
     <TableLayout 
-        android:id="@+id/ButtonView"
+        android:id="@+id/numButtonLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -76,18 +83,15 @@
                 style="@style/NumButtonStyle"/>
         </TableRow>
         <TableRow>
-            <!-- dummy -->
-            <View
-                style="@style/NumButtonStyle"/>
             <Button
                 android:id="@+id/Button00"
                 android:text="0"
-                style="@style/NumButtonStyle"/>
-            <View
+                android:layout_column="1"
                 style="@style/NumButtonStyle"/>
             <Button
                 android:id="@+id/ButtonAnswer"
                 android:layout_span="2"
+                android:layout_column="3"
                 android:text="@string/answerButton"
                 style="@style/AnswerButtonStyle"/>
         </TableRow>
