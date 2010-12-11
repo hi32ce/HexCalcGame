@@ -7,24 +7,24 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class HexCalcGameActivity extends Activity implements OnClickListener
-{
+public class HexCalcGameActivity extends Activity {
     /** Called when the activity is first created. */
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {	
-    	Button button;
+    public void onCreate(Bundle savedInstanceState) {	
+    	Button startButton;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hexcalcgameactivity);
-        button = (Button)findViewById(R.id.Button01);
-        button.setOnClickListener(this);
+        
+        startButton = (Button)findViewById(R.id.StartButton);
+        startButton.setOnClickListener(new OnClickListener(){
+        	@Override
+        	public void onClick(View v) {
+        		Intent intent = new Intent();
+        		intent.setClass(HexCalcGameActivity.this, GameActivity.class);
+        		startActivity(intent);
+        		finish();
+        	}
+        });
     }
-
-	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		Intent intent = new Intent(HexCalcGameActivity.this, MyPreferenceActivity.class);
-		startActivity(intent);
-	}
 }
 

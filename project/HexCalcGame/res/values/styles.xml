@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--<style name="NumButtonStyle" parent="android:Widget.Button">-->
+<style name="NumButtonStyle">
+    <item name="android:layout_width">60dp</item>
+    <item name="android:layout_height">55dp</item>
+    <item name="android:textSize">24dp</item>
+</style>
+<style name="AnswerButtonStyle">
+    <item name="android:layout_width">120dp</item>
+    <item name="android:layout_height">50dp</item>
+    <item name="android:textSize">24dp</item>
+</style>
+</resources>
